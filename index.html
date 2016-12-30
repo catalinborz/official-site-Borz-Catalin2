@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<title>Borz Catalin - Official site</title>
+	</head>
+	
+<style>
+	html {
+		font-size: 1em;
+	}
+
+	body {
+	  background-color: #c9c9c9;
+	  font-family: Merriweather, Arial, Sans-serif;
+	  font-weight: 400;
+	  line-height: 1.45;
+	  color: #333;
+	}
+
+	p {
+		margin-bottom: 1.3em;
+	}
+
+	h1, h2, p{
+	  margin: 1.414em 0 0.5em;
+	  font-weight: inherit;
+	  line-height: 1.2;
+	}
+
+	h1 {
+	  margin-top: 0;
+	  font-size: 3.157em;
+	}
+
+	h2 {
+		font-size: 2.369em;
+	}
+
+	p {
+		font-size: 1.333em;
+	}
+
+	small, .font_small {
+		font-size: 0.75em;
+	}
+	
+	#Textitalic{
+		font-style: italic;
+	}
+	
+	/*end of font setting*/
+	
+	.container{
+		background-color: #fff;
+		padding: 0;
+		max-width: 80%;
+	}
+	
+	.sectionHead{
+		background-color: #e8b730;
+		margin-top: 1%;
+		padding: 3%;
+	}
+	
+	#CatalinPhoto img{
+		display: block;
+		width: 175px;
+		height: 175px;
+		margin: 0 auto;
+	}
+	
+	.sectionHead h2{
+		color: #7b6e4f;
+		text-align: center;
+		padding: 2% 1% 0 1%;
+		margin-top: 0;
+	}
+	
+	.section_title{
+		text-align: center;
+		color: #f4f2ed;
+		margin-top: 3%;
+		margin-bottom: 7%;
+	}
+	
+	.indent{
+		text-indent: 5%;
+	}	
+	
+	.content{
+		background-color: #12557c;
+		max-width: 94%;
+		margin: 0 auto;
+		color: #f4f2ed;
+		margin-bottom: 1%;
+		margin-top: 1%;
+		padding: 0.5% 5% 5% 5%;
+		border: 1px solid green;
+	}
+	
+	.row_extra_padding{
+		padding: 2% 1% 2% 1%;
+	}
+	
+	#Logow3schools{
+		width: 250px;
+		height: 70px;
+		margin: 0 auto;
+		margin-bottom: 5%;
+		margin-top: 3%;
+		border-radius: 10%;
+	}
+
+	.table{
+		font-family: Segoe UI, Arial, Sans-serif;
+		background-color: #fff;
+		font-size: 1.333em;
+		margin-bottom: 0;
+	}
+	
+	.table th,tr{
+		color: #3f4448;
+		text-align: center;
+		font-weight: bold;
+	}
+	
+	.table thead{
+		font-size: 1.333em;
+		background-color: #F8B75F;
+	}
+	
+	#Logocoursera{
+		width: 250px;
+		height: 60px;
+		margin: 0 auto;
+		margin-bottom: 5%;
+		margin-top: 3%;
+		border-radius: 10%;
+	}
+	
+	.CourseraCours1{
+		width: 550px;
+		height: 90px;
+		margin-bottom: 10px;
+	}
+	
+	.CourseraCours2{
+		width: 550px;
+		height: 90px;
+	}
+	
+	#Logosololearn{
+		width: 250px;
+		height: 60px;
+		margin: 0 auto;
+		margin-bottom: 5%;
+		margin-top: 3%;
+		border-radius: 10%;
+	}
+	
+	.SololearnCertificate{
+		filter: brightness(110%);
+	}
+	
+/*----------------carousel--------------*/
+
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+	  margin: auto;
+	  display: block;
+	}
+	
+	.carousel-indicators{
+		bottom: -2%;
+	}
+	
+	.carousel-indicators li{
+		background-color: #000;
+		border: #000;
+	}
+
+	.carousel-indicators .active{
+		background-color: #F8B75F;
+	}
+	
+	.glyphicon{
+		color: #fff;
+	}
+
+	.carousel-control .glyphicon{
+		top: 60%;
+	}
+	
+	a:hover> .glyphicon{
+		color: #F8B75F;
+	}
+/*------------end of carousel-----------*/
+	
+	.colordiv{
+		background-color: #e8b730;
+		width: 100%;
+		height: 20%;
+	}
+	
+	.footercolordiv{
+		background-color: #e8b730;
+		width: 100%;
+		height: 30%;
+		text-align: center;
+		margin-top: -4%;
+		margin-bottom: 1%;
+		color: #7b6e4f;
+	}
+	
+	.footercolordiv h2{
+		padding: 2.5% 0 0 0;
+	}
+	
+	.websites{
+		filter: gray;
+		-webkit-filter: grayscale(100%);
+		opacity: 0.5;
+		transition: 0.5s ease;
+	}
+	
+	.websites:first-child{
+		margin-bottom: 10%;
+	}
+	
+	.websites:hover{
+		transform: scale(1, 1.1);
+		opacity: 1;
+		background-color: #F8B75F;
+		filter: none;
+		-webkit-filter: grayscale(0%);
+	}
+	
+	.img-rounded{
+		border-radius: 4%;
+	}
+	
+	#site:visited {
+		color: #F8B75F;
+	}
+	
+	#site:hover {
+		color: red;
+	}
+	
+	#site:active {
+		color: #7b6e4f;
+	}
+
+	.website_info{
+		color: #f4f2ed;
+		text-decoration: none;
+		text-align: center;
+		margin: 0 auto;
+		line-height: 30px;
+		width: 93%;
+		font-weight: 50;
+	}
+	
+	.feature_text{
+		line-height: 50px;
+		font-weight: bold;
+	}
+	
+/*------------------Break points---------------------*/
+	@media (max-width: 550px){
+		.container{
+			max-width: 100%;
+		}
+		
+		#Logow3schools{
+			width: 70%;
+		}
+		
+		#Logocoursera{
+			margin-top: 15%;
+			width: 70%;
+		}
+		
+		#Logosololearn{
+			margin-top: 15%;
+			width: 70%;
+		}
+	}
+	
+	@media (max-width: 767px){
+		.websites:first-child{
+			margin-bottom: 2%;
+		}
+		
+		.website_info{
+			margin-bottom: 9%;
+		}
+	}
+	
+	@media (min-width: 768px){
+		#Logow3schools{
+			transform: translateY(130%);
+			margin-bottom: 0;
+		}
+		
+		#Logocoursera{
+			transform: translateY(90%);
+			margin-bottom: 0;
+		}
+	}
+	
+	@media (min-width: 768px) and (max-width: 899px){
+		#Logosololearn{
+			transform: translateY(75%);
+			margin-bottom: 0;
+		}
+	}
+	
+	@media (min-width: 900px) and (max-width: 1089px){
+		#Logosololearn{
+			transform: translateY(100%);
+			margin-bottom: 0;
+		}
+	}
+	
+	@media (min-width: 1090px) and (max-width: 2000px){
+		#Logosololearn{
+			transform: translateY(140%);
+			margin-bottom: 0;
+		}
+	}
+	
+</style>
+
+<body>
+	<div class="container">
+		<div class="sectionHead">
+				<div id="CatalinPhoto">
+					<img src="img/CatalinPhoto.png" alt="CatalinPhoto">
+				</div>
+				<h2>Welcome to my website</h2>	
+		</div>
+		
+		<div class="content">
+			<p>Hi, I am Borz Catalin and I want to be a Front-End Developer.</p>
+			<p id="Textitalic">Here is what I have done so far to reach my goal:</p>
+			<p class="indent">&#9671; I took online training courses on different platforms, so to have an understanding of the 
+			programming languages used for website development.</p>
+			<p class="indent">&#9671; I focused on the following languages: HTML, CSS, JQuery, Javascript and Bootstrap.</p>
+			<p class="indent">&#9671; I build this portfolio website so to showcase my projects.</p>
+			<p>See below a detailed view of the websites and training classes I followed and my portfolio.</p>
+		</div>
+		
+		<div class="colordiv">&nbsp;</div>
+		
+		<div class="content">
+			<h2 class="section_title">Online courses that I studied</h2>
+			
+			<div class="row row_extra_padding">
+				<div class="col-sm-6">
+					<img id="Logow3schools" class="img-responsive " src="img/w3schools.png" alt="w3schools">
+				</div>
+				
+				<div class="col-sm-6">
+					<table class="table center table-bordered">
+						<thead>
+							<tr>
+								<th>Languages</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>HTML</td>
+							</tr>
+							
+							<tr>
+								<td>CSS</td>
+							</tr>
+							
+							<tr>
+								<td>JAVASCRIT</td>
+							</tr>
+							
+							<tr>
+								<td>jQUERY</td>
+							</tr>
+							
+							<tr>
+								<td>BOOTSTRAP</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>	
+			</div>
+						
+			<div class="row row_extra_padding">
+				<div class="col-sm-6">
+					<img id="Logocoursera" class="img-responsive" src="img/coursera.png" alt="coursera">
+				</div>
+			
+				<div class="col-sm-6">
+					<img class="CourseraCours1 img-responsive" src="img/coursera_cours1.png" alt="coursera_cours1">
+					<img class="CourseraCours2 img-responsive" src="img/coursera_cours2.png" alt="coursera_cours2">
+				</div>
+			</div>
+			
+			<div class="row row_extra_padding">
+				<div class="col-sm-6">
+					<img  class="img-responsive" id="Logosololearn" src="img/sololearn.png" alt="sololearn">
+				</div>
+				
+				<div class="col-sm-6">
+				
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img class="SololearnCertificate img-responsive" src="img/Certificate HTML.jpg" alt="Certificate HTML">
+							</div>
+
+							<div class="item">
+								<img class="SololearnCertificate img-responsive" src="img/Certificate CSS.jpg" alt="Certificate CSS">
+							</div>
+
+							<div class="item">
+								<img class="SololearnCertificate img-responsive" src="img/Certificate Javascript.jpg" alt="Certificate Javascript">
+							</div>
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left orange" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right orange" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+				</div>	
+			</div>
+		
+		<div class="colordiv">&nbsp;</div>
+		
+		<div class="content">
+			<h2 class="section_title">Portfolio</h2>
+		
+			<div class="row">
+				<div class="col-sm-6">
+					<a href="https://catalinborz.github.io/pizza-website-delivery/" target="_blank">
+						<img class="websites img-rounded img-responsive" src="img/Pizza_delivery_website.png" alt="Pizza_delivery_website">
+						<p class="website_info"><span class="feature_text">Features:</span><br>&#9671;Responsive via Bootstrap
+						<br>&#9671;Google map implemented</p>
+					</a>
+				</div>
+			
+				<div class="col-sm-6">
+					<a href="https://catalinborz.github.io/Elis-gym/" target="_blank">
+						<img class="websites img-rounded img-responsive" src="img/Elis_gym_website.png" alt="Elis_gym_website">
+						<p class="website_info"><span class="feature_text">Features:</span><br>&#9671;Responsive via Bootstrap
+						<br>&#9671;Google map implemented<br>&#9671;jQuery Smooth Scroll<br>&#9671;Carousel</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="colordiv">&nbsp;</div>
+		
+		<div class="content">
+			<p>I am interested in job opportunities in this field of work.<p>
+			<p>If you have an offer don’t hesitate to contact me.</p>
+			<p>My contact details are:</p>
+			<p class="indent">Phone: 0747301276</p>
+			<p class="indent">Email: borz.catalin@yahoo.com</p>
+			<p class="indent">See full resume <a id="site" href="https://ro.linkedin.com/in/borz-catalin-247216121" target="_blank">here</a></p>
+		</div>
+		<div class="footercolordiv"><h2>THANK YOU FOR VISITING</h2></div>
+	</div>
+	
+	<script src="js/Carousel_controls_activation.js" type="text/javascript"></script>
+	
+</body>
+
+</html>
